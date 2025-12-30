@@ -1,0 +1,7 @@
+{
+  "name": "RevTrack - Fuel Consumption Tracker",
+  "description": "A high-performance PWA for car enthusiasts to track fuel consumption, efficiency, and maintenance with sleek visualizations.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
