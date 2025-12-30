@@ -1,15 +1,14 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // Using './' ensures that the app works regardless of the subpath it is deployed to
-  base: './',
+  base: '', // Empty string makes all asset paths relative
   build: {
     outDir: 'dist',
+    emptyOutDir: true,
     assetsDir: 'assets',
     sourcemap: false,
-    emptyOutDir: true,
-  },
+    target: 'esnext'
+  }
 });
